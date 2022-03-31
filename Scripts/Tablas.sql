@@ -75,11 +75,12 @@ BEGIN
 END 
 GO
 
+
 IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Cd')
 BEGIN
 	CREATE TABLE [dbo].[Cd](
+		[NroCd]					 BIGINT IDENTITY(1,1)		NOT NULL,
 		[CodigoTitulo]			 BIGINT						NOT NULL ,
-		[NroCd]					 BIGINT						NOT NULL,
 		[Condicion]				 VARCHAR(300)				NOT NULL,
 		[Ubicacion]				 VARCHAR(500)				NOT NULL,
 		[Estado]				 VARCHAR(500)				NOT NULL,
@@ -91,13 +92,13 @@ GO
 IF NOT EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'DetalleAlquiler')
 BEGIN
 		CREATE TABLE [dbo].[DetalleAlquiler] (
-		[CodigoDetalleAlquiler]			BIGINT				NOT NULL,
-		[NroAlquiler]					BIGINT				NOT NULL,
-		[Item]							INT					NOT NULL,
-		[CodigoTitulo]					BIGINT				NOT NULL,
-		[NroCd]							BIGINT				NOT NULL,
-		[DiasPrestamo]					INT					NOT NULL,
-		[FechaDevolucion]				DATETIME			NOT NULL,
+		[CodigoDetalleAlquiler]			BIGINT IDENTITY(1,1)	NOT NULL,
+		[NroAlquiler]					BIGINT					NOT NULL,
+		[Item]							INT						NOT NULL,
+		[CodigoTitulo]					BIGINT					NOT NULL,
+		[NroCd]							BIGINT					NOT NULL,
+		[DiasPrestamo]					INT						NOT NULL,
+		[FechaDevolucion]				DATETIME				NOT NULL,
 		CONSTRAINT [PK_DetalleAlquiler] PRIMARY KEY CLUSTERED ([CodigoDetalleAlquiler] ASC)
 		)
 END

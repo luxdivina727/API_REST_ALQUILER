@@ -5,7 +5,7 @@ using PruebaTecnicaActiveOne.Models;
 
 namespace PruebaTecnicaActiveOne.Controllers
 {
-    public class SancionController
+    public class SancionController : ApiController
     {
         // GET api/<controller>
         public List<Sancion> Get()

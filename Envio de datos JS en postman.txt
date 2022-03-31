@@ -1,0 +1,62 @@
+// ENVIAR JS DESDE EL POSTMAN
+
+
+{
+        "Telefono": 121223,
+        "NombreCliente": "Nombre",
+        "Email": "Nombre@ds",
+        "Cedula": 1022,
+        "FechaNacimiento": "2022-10-03T00:00:00",
+        "FechaInscripcion": "2022-10-03T00:00:00",
+        "TemaInteres": "Temas",
+        "Estado": "Estado"
+}
+
+// ALQUILER 
+
+{
+        "FechaAlquiler": "2023-02-15T00:00:00",
+        "ValorAlquiler": 2562,
+        "Cliente": {
+            "CodigoCliente": 1
+        }
+}
+// SANCION
+
+{
+        "NroSancion": 1,
+        "TipoSancion": "MULTA",
+        "NroDiasSancion": 10,
+        "Cliente": {
+            "CodigoCliente": 1
+        },
+        "Alquiler": {
+            "NroAlquiler": 2
+        }
+}
+	
+// CD
+
+   {
+        "CodigoTitulo": 15245,
+        "Condicion": "N/A",
+        "Ubicacion": "Barranquilla",
+        "Estado": "Activo"
+    }
+	
+// DETALLE
+
+{
+        "CodigoDetalleAlquiler": 1,
+        "Alquiler": {
+            "NroAlquiler": 1
+        },
+        "Item": 2,
+        "CodigoTitulo": 1256,
+        "Cd": {
+            "NroCd": 21
+        },
+        "DiasPrestamo": 10,
+        "FechaDevolucion": "2023-12-20T00:00:00"
+}
+	

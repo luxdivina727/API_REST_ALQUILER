@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PruebaTecnicaActive.Models
+namespace PruebaTecnicaActiveOne.Models
 {
     public class DetalleAlquiler
     {
@@ -9,7 +9,7 @@ namespace PruebaTecnicaActive.Models
         public Int32 Item { get; set; }
         public Int64 CodigoTitulo { get; set; }
         public Cd Cd { get; set; }
-        public Int32 DiasPrestamos { get; set; }
+        public Int32 DiasPrestamo { get; set; }
         public DateTime FechaDevolucion { get; set; }
     }
 }

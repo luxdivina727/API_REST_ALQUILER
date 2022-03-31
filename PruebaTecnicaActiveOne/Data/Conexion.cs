@@ -1,6 +1,6 @@
 ﻿using System.Configuration;
 
-namespace PruebaTecnicaActive.Data
+namespace PruebaTecnicaActiveOne.Data
 {
     public class Conexion
     {
